@@ -41,6 +41,21 @@
             margin-top: 10px;
             border-radius: 5px;
         }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .gallery img {
+            width: calc(33.333% - 10px);
+            border-radius: 5px;
+        }
+        @media (max-width: 600px) {
+            .gallery img {
+                width: calc(50% - 10px);
+            }
+        }
         .link {
             display: block;
             text-align: center;
@@ -64,6 +79,7 @@
         <h1>Welkom bij mijn Portfolio</h1>
         <p>Welkom op mijn portfolio-website! Hier vind je informatie over verschillende onderwerpen in de informatica, inclusief het binaire stelsel, de werking van computers, kleurmodellen, en hoe beeld en geluid worden opgeslagen.</p>
         
+        <!-- Sectie: Binaire stelsel -->
         <div class="section">
             <h2>Binaire Stelsel</h2>
             <p>Het binaire stelsel is een talstelsel dat uitsluitend gebruikmaakt van de cijfers 0 en 1. Computers gebruiken het binaire stelsel om gegevens te verwerken en op te slaan.</p>
@@ -73,6 +89,7 @@
             </div>
         </div>
         
+        <!-- Sectie: Werking van de computer -->
         <div class="section">
             <h2>Werking van de Computer</h2>
             <h3>Invoer</h3>
@@ -85,6 +102,7 @@
             <p>Gegevens kunnen worden opgeslagen op harde schijven, SSD's, en andere opslagmedia voor later gebruik.</p>
         </div>
         
+        <!-- Sectie: Kleurmodellen -->
         <div class="section">
             <h2>Kleurmodellen: RGB en CMY-K</h2>
             <h3>RGB Kleurmodel</h3>
@@ -101,6 +119,7 @@
             <img src="pixels-resolution.png" alt="Pixels en Resolutie">
         </div>
         
+        <!-- Sectie: Opslag van beeld en geluid -->
         <div class="section">
             <h2>Opslag van Beeld en Geluid</h2>
             <h3>Bitmap- en Vectorafbeeldingen</h3>
@@ -119,6 +138,19 @@
             <p>Tekstcompressie is een methode om de hoeveelheid ruimte die een tekstbestand inneemt te verminderen. Dit kan worden bereikt door herhalende patronen in de tekst te identificeren en te coderen. Bekende compressiemethoden zijn Huffman-codering en Lempel-Ziv-Welch (LZW).</p>
             <p>Door tekstcompressie kan opslagruimte worden bespaard en kunnen bestanden sneller worden verzonden over netwerken. Dit is vooral nuttig voor het verzenden van grote tekstbestanden zoals boeken of databases.</p>
             <img src="text-compression-example.png" alt="Voorbeeld van tekstcompressie">
+        </div>
+        
+        <!-- Fotogalerij Sectie -->
+        <div class="section">
+            <h2>Fotogalerij</h2>
+            <div class="gallery">
+                <img src="project1.png" alt="Project 1">
+                <img src="project2.png" alt="Project 2">
+                <img src="project3.png" alt="Project 3">
+                <img src="project4.png" alt="Project 4">
+                <img src="project5.png" alt="Project 5">
+                <img src="project6.png" alt="Project 6">
+            </div>
         </div>
     </div>
 </body>
