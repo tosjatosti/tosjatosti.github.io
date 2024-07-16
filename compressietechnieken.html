@@ -1,1 +1,102 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opslag van Beeld en Geluid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #007bff;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        .section {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .section h3 {
+            color: #333;
+        }
+        .section img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        .link {
+            display: block;
+            text-align: center;
+            margin: 40px 0;
+        }
+        .link a {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .link a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Opslag van Beeld en Geluid</h1>
+        <p>Beeld en geluid worden op verschillende manieren opgeslagen en verwerkt. Hieronder bespreek ik de verschillen tussen bitmap- en vectorafbeeldingen, hoe geluid wordt gesampled, en de principes van tekstcompressie.</p>
+        
+        <div class="section">
+            <h2>Bitmap- en Vectorafbeeldingen</h2>
+            <h3>Wat zijn Bitmapafbeeldingen?</h3>
+            <p>Bitmapafbeeldingen bestaan uit een raster van pixels, waarbij elke pixel een specifieke kleur heeft. Bekende bitmapformaten zijn JPEG, PNG en BMP. Bitmapafbeeldingen zijn ideaal voor gedetailleerde foto's, maar kunnen groot in bestandsgrootte zijn.</p>
+            <img src="bitmap-example.png" alt="Voorbeeld van een bitmapafbeelding">
+            
+            <h3>Wat zijn Vectorafbeeldingen?</h3>
+            <p>Vectorafbeeldingen gebruiken wiskundige formules om vormen te beschrijven. Ze zijn schaalbaar zonder kwaliteitsverlies, waardoor ze ideaal zijn voor logo's en illustraties. Bekende vectorformaten zijn SVG, EPS en AI.</p>
+            <img src="vector-example.png" alt="Voorbeeld van een vectorafbeelding">
+        </div>
+        
+        <div class="section">
+            <h2>Sampling en Sample Rate</h2>
+            <h3>Wat is Sampling?</h3>
+            <p>Sampling is het proces waarbij analoog geluid wordt omgezet naar digitaal formaat door op regelmatige intervallen (samples) de amplitude van het geluid vast te leggen. Dit proces wordt uitgevoerd door een analoog-naar-digitaal converter (ADC).</p>
+            
+            <h3>Wat is Sample Rate?</h3>
+            <p>De sample rate is het aantal samples per seconde, gemeten in Hertz (Hz). Een hogere sample rate resulteert in een nauwkeuriger digitale weergave van het analoge signaal. CD-kwaliteit audio heeft bijvoorbeeld een sample rate van 44,1 kHz.</p>
+            <img src="sampling-example.png" alt="Voorbeeld van geluidsampling">
+        </div>
+        
+        <div class="section">
+            <h2>Tekstcompressie</h2>
+            <h3>Wat is Tekstcompressie?</h3>
+            <p>Tekstcompressie is een methode om de hoeveelheid ruimte die een tekstbestand inneemt te verminderen. Dit kan worden bereikt door herhalende patronen in de tekst te identificeren en te coderen. Bekende compressiemethoden zijn Huffman-codering en Lempel-Ziv-Welch (LZW).</p>
+            
+            <h3>Voordelen van Tekstcompressie</h3>
+            <p>Door tekstcompressie kan opslagruimte worden bespaard en kunnen bestanden sneller worden verzonden over netwerken. Dit is vooral nuttig voor het verzenden van grote tekstbestanden zoals boeken of databases.</p>
+            <img src="text-compression-example.png" alt="Voorbeeld van tekstcompressie">
+    </div>
+</body>
+</html>
 
