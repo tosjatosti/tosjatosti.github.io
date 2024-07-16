@@ -1,90 +1,137 @@
-<html lang="en">
-  <head>
-  <title>Tosja's website</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-  * {
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  body>
-   {
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mijn Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .intro {
+            background-color: #f8f9fa;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .intro h1 {
+            margin: 0 0 20px;
+            font-size: 2.5em;
+        }
+        .intro p {
+            margin: 0 0 20px;
+            font-size: 1.2em;
+            color: #555;
+        }
+        .intro img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <section class="intro">
+        <h1>Welkom op mijn Portfolio</h1>
+        <p>Hallo, ik ben [Jouw Naam], een gepassioneerde [jouw vakgebied, bijv. webontwikkelaar, grafisch ontwerper, etc.].</p>
+        <p>Met een oog voor detail en een liefde voor [jouw specialisatie, bijv. schone code, prachtige ontwerpen], streef ik ernaar om digitale ervaringen te creëren die zowel functioneel als visueel aantrekkelijk zijn.</p>
+        <img src="jouw-foto.jpg" alt="Jouw Naam">
+    </section>
+</body>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mijn Projecten Galerij</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="gallery">
+        <h2>Mijn Projecten</h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>Korte beschrijving van Project 1.</p>
+            </div>
+            <div class="grid-item">
+                <img src="project2.jpg" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>Korte beschrijving van Project 2.</p>
+            </div>
+            <div class="grid-item">
+                <img src="project3.jpg" alt="Project 3">
+                <h3>Project 3</h3>
+                <p>Korte beschrijving van Project 3.</p>
+            </div>
+            <!-- Voeg meer projecten toe zoals nodig -->
+        </div>
+    </section>
+</body>
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  /* Style the top navigation bar */
-  .topnav {
-    overflow: hidden;
-    background-color: #000000;
-  }
-  
-  /* Style the topnav links */
-  .topnav a {
-    float: left;
-    display: block;
-    color: #ffffff;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  /* Change color on hover */
-  .topnav a:hover {
-    background-color: #f1f1f1;
-    color: black;
-  }
-  
-  /* Style the content */
-  .content {
-    background-color: #ddd;
-    padding: 10px;
-    height: 300px; 
-  }
-  
- 
-  .footer {
-    background-color: #f1f1f1;
-    padding: 5px;
-    font-size: smaller;
+    padding: 0;
+    background-color: #f8f9fa;
 }
-  </style>
-  </head>
 
-  <body>
-  
-  <div class="topnav">
-    <a href="werking" target="_self>werking computer</a>
-    <a href="binair">binair stelsel</a>
-    <a href="kleur">kleurmodellen</a>
-    <a href="compressie">compressietechnieken</a>
-  </div>
-  
-  <div class="content">
-    <h2>over mij</h2>
-    <p>Hallo ik ben tosja en ik ben 16 jaar oud.
-      ik heb verschillende hobbies en die zijn
-      <ul>
-        <li>skeeleren</li>
-        <li>gamen</li>
-        <li>lego bouwen</li>
-      </ul>
-      Skeeleren vind ik zelf altijd wel leuk om te doen als het goed weer ervoor is maar dat is het natuurlijk niet altijd. 
-      Als het slecht weer is of ik wil niet naar buiten dan game ik meestal wel soms shooter games maar ik vind 2 player games ook leuk en nog wel wat meer.
-      Lego bouw ik meestal als ik zin heb om wat voor mezelf te doen ik bouw lego al sinds ik kleiner was toen hield ik ervan om dingen te bouwen van tekenseries
-      maar nu vind ik dingen bouwen zoals de ISS van nasa of andere lego sets.
+.gallery {
+    padding: 50px 20px;
+    text-align: center;
+}
 
-    </p>
-  </div>
-  
+.gallery h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
+}
 
-  <div class="footer">
-    <p>Tosja Barszczak</p>
-  </div>
-  
-  </body>
-  </html>
+.grid-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 0;
+    list-style-type: none;
+}
+
+.grid-item {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.grid-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.grid-item h3 {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.grid-item p {
+    font-size: 1em;
+    margin: 0;
+    color: #666;
+}
+
+</html>
+
   
   
   
